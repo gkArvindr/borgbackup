@@ -2,8 +2,8 @@
 set -euo pipefail
 IFS=$'\n\t'
 #Written By Arvind GK
-#Part 2 : To backup Second VM Disk
-    • Disk One Backup File name backup-vm-2nd-disk.s
+#Part 1 : To backup Frist VM Disk
+    • Disk One Backup File name backup-vm-1nd-disk.s
     • This File name backup-vm-1st-
 disk.sh DOMAIN="$1"
 UUID=$(sudo virsh dumpxml $DOMAIN | grep uuid | cut -d">" -f2 | cut -d"<" -f1)
