@@ -1,0 +1,17 @@
+<?php
+// Copy to config/config.php (not committed to git) and fill in.
+return [
+    'db' => [
+        'dsn' => 'pgsql:host=127.0.0.1;port=5432;dbname=borgbackup',
+        'user' => 'borgbackup',
+        'pass' => 'changeme',
+    ],
+    // 32 raw bytes, base64-encoded. Generate with: openssl rand -base64 32
+    'encryption_key_base64' => 'CHANGE_ME',
+    // Directory containing backup.sh / restore.sh / scheduler.sh
+    'scripts_dir' => '/opt/borgbackup',
+    // Where per-domain config/passphrase files are written for scheduled runs
+    'domains_conf_dir' => '/etc/borgbackup/domains',
+    // cron.d file the GUI regenerates whenever schedules change
+    'cron_file' => '/etc/cron.d/borgbackup-gui',
+];

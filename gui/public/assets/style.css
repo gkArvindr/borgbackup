@@ -1,0 +1,18 @@
+body { font-family: sans-serif; margin: 0; background: #f7f7f8; color: #1a1a1a; }
+nav { background: #1a1a2e; padding: 12px 20px; display: flex; gap: 16px; align-items: center; }
+nav a { color: #eee; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+nav .user { margin-left: auto; color: #aaa; }
+main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 24px; background: #fff; }
+th, td { padding: 8px 10px; border-bottom: 1px solid #ddd; text-align: left; }
+form { display: flex; flex-direction: column; gap: 10px; max-width: 420px; background: #fff; padding: 16px; border-radius: 6px; }
+label { display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+input, select { padding: 6px 8px; font-size: 14px; }
+button { padding: 8px; background: #1a1a2e; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+.status-success { color: #1a7f37; }
+.status-failed { color: #c62828; }
+.status-running { color: #946200; }
+.error { color: #c62828; }
+.login { max-width: 320px; margin: 80px auto; }
+pre.log { background: #111; color: #dcdcdc; padding: 16px; overflow: auto; border-radius: 6px; }
