@@ -1,0 +1,6 @@
+# One backup job per line: <domain> <driver> <cron schedule>
+# Copy to /etc/borgbackup/schedules.conf
+#
+# Examples:
+# Window2012-VM1   kvm   0 2 * * *
+# suse-xen-app01    xen   30 3 * * *
