@@ -1,0 +1,18 @@
+# Copy to /etc/borgbackup/borgbackup.conf (chmod 600) and fill in.
+# Never commit a real copy of this file.
+
+# Path to the borg repository (local path or ssh URL, e.g. ssh://user@host/repo)
+BORG_REPO="/qnap/rcm-backup"
+
+# Path to a file containing the repo passphrase, one line, chmod 600.
+# The passphrase itself must never be stored in this config or in git.
+BORG_PASSPHRASE_FILE="/etc/borgbackup/passphrase"
+
+# How long to keep archives (borg prune --keep-within value)
+KEEP_WITHIN="1m"
+
+# Scratch directory used for temporary disk snapshots
+SNAPSHOT_DIR="/img"
+
+# Directory holding per-domain exclude-file scratch data
+WORK_DIR="/var/lib/borgbackup"
